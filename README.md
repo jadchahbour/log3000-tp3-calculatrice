@@ -19,7 +19,7 @@ La calculatrice prend en charge :
 
 - les opérations de base : `+`, `-`, `*` et `/`
 - une seule opération à la fois entre 2 nombres entiers
-- un résultat décimal lorsque c'est nécessaire
+- un résultat toujours affiché sous forme décimale (comme `5.0`)
 - un message d'erreur si l'expression est invalide ou dans le cas d'une division par zéro
 
 La calculatrice ne permet pas :
@@ -90,6 +90,22 @@ La calculatrice ne permet pas :
 5. Appuyer sur `C` pour effacer la saisie.
 
 ## Tests
+
+Les tests utilisent [pytest](https://docs.pytest.org/en/stable/).
+
+1. Installer pytest :
+
+    ```shell
+    pip install pytest
+    ```
+
+2. Lancer les tests depuis la racine du projet :
+
+    ```shell
+    pytest
+    ```
+
+Les détails de ce que couvrent les tests se trouvent dans `tests/README.md`.
 
 ## Contribution
 
