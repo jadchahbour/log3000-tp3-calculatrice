@@ -50,14 +50,24 @@ Les balises entre doubles accolades y sont remplacées avant l'envoi de la page 
 </div>
 
 <script>
+   // Vrai quand l'écran affiche le résultat ou l'erreur du calcul précédent.
+   let resultShown = document.getElementById('display').value !== '';
+
    /**
     * Ajoute un caractère à la fin de l'expression affichée à l'écran.
+    * Si l'écran affiche un résultat, il est d'abord vidé pour commencer
+    * un nouveau calcul.
     *
     * @param {string} value Chiffre ou opérateur à ajouter.
     * @returns {void}
    */
    function appendToDisplay(value) {
+      
       const display = document.getElementById('display');
+      if (resultShown) {
+         display.value = '';
+         resultShown = false;
+      }
       display.value += value;
    }
 
@@ -68,6 +78,7 @@ Les balises entre doubles accolades y sont remplacées avant l'envoi de la page 
    */
    function clearDisplay() {
       document.getElementById('display').value = '';
+      resultShown = false;
    }
 </script>
 </body>
