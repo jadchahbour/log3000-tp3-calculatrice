@@ -19,7 +19,7 @@ La calculatrice prend en charge :
 
 - les opérations de base : `+`, `-`, `*` et `/`
 - une seule opération à la fois entre 2 nombres entiers
-- un résultat décimal lorsque c'est nécessaire
+- un résultat toujours affiché sous forme décimale (comme `5.0`)
 - un message d'erreur si l'expression est invalide ou dans le cas d'une division par zéro
 
 La calculatrice ne permet pas :
