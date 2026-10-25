@@ -145,9 +145,9 @@ Par exemple, `fix/5-division-par-zéro`.
 
 ### Commits
 
-Les messages de commits suivent le format `type: description`. Les types sont les mêmes que pour les branches. Les commits peuvent se terminer par le numéro de l'issue concernée, le cas échéant. Ils sont écrits en français.
+Les messages de commits suivent le format `type: description`. Les types sont les mêmes que pour les branches. Les commits sont écrits en français.
 
-Par exemple, `fix: correction de la division par zéro (#5)`.
+Par exemple, `fix: correction de la division par zéro`.
 
 Les commits peuvent contenir un corps de message afin de donner plus de détails, le cas échéant.
 
