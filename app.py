@@ -9,9 +9,9 @@ operators.py, selon l'opérateur utilisé.
 from flask import Flask, request, render_template
 from operators import add, subtract, multiply, divide
 
-# Crée l'application Flask. __name__ lui permet de retrouver les dossiers
-# templates et static à partir de l'emplacement de ce fichier.
-app = Flask(__name__)
+# Crée l'application Flask. Les dossiers templates et static sont à la racine
+# du projet, d'où les chemins relatifs.
+app = Flask(__name__, template_folder='../templates', static_folder='../static')
 
 # Associe chaque symbole d'opérateur à sa fonction. Ce dictionnaire évite un long
 # if/elif ou un switch. Il permet d'ajouter un nouveau opérateur sans toucher calculate().

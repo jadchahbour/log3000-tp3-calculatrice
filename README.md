@@ -72,13 +72,13 @@ La calculatrice ne permet pas :
     macOS / Linux :
 
     ```shell
-    python3 app.py
+    python3 backend/app.py
     ```
 
     Windows (PowerShell) :
 
     ```powershell
-    python app.py
+    python backend/app.py
     ```
 
 2. Ouvrir [http://127.0.0.1:5000](http://127.0.0.1:5000) dans un navigateur.
