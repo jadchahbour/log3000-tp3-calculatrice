@@ -91,6 +91,22 @@ La calculatrice ne permet pas :
 
 ## Tests
 
+Les tests utilisent [pytest](https://docs.pytest.org/en/stable/).
+
+1. Installer pytest :
+
+    ```shell
+    pip install pytest
+    ```
+
+2. Lancer les tests depuis la racine du projet :
+
+    ```shell
+    pytest
+    ```
+
+Les détails de ce que couvrent les tests se trouvent dans `tests/README.md`.
+
 ## Contribution
 
 ### Issues
